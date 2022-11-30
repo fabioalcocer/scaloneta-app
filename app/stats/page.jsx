@@ -1,3 +1,5 @@
+import CardCms from './components/CardCms'
+
 const getStats = () => {
   return fetch('https://scaloneta-api.vercel.app/seleccion').then(
     (res) => res.json()
@@ -13,6 +15,8 @@ async function Stats () {
       <div>
         <p>Entrenador: {stats[0].entrenador.nombre}</p>
       </div>
+
+      <CardCms />
     </div>
   )
 }

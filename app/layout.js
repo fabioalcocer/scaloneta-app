@@ -3,6 +3,7 @@ import '../styles/globals.css'
 import NavBar from './index/components/NavBar'
 
 const roboto = Roboto({
+  subsets: ['latin'],
   weight: ['300', '700']
 })
 
